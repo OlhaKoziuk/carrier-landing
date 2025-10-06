@@ -1,0 +1,69 @@
+:root {
+  --gap-between-badges: 32px;
+  --icon-size: 36px;
+  --icon-bg: #eef4ff;
+  --icon-ring: transparent;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--gap-between-badges);
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.icon {
+  display: inline-grid;
+  place-items: center;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  border-radius: 999px;
+  background: var(--icon-bg);
+  box-shadow: 0 0 0 1px var(--icon-ring) inset;
+  flex: 0 0 auto;
+}
+
+.iconImg {
+  width: 20px;
+  height: 20px;
+  display: block;
+  object-fit: contain;
+}
+
+.iconStub {
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: #9ec1ff;
+  display: block;
+}
+
+.text {
+  display: grid;
+  align-items: center;
+  font-family: "Rubik", var(--app-font, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif);
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.label {
+  font-weight: 400;
+  opacity: 0.8;
+  margin-right: 6px;
+}
+
+.value {
+  font-weight: 600;
+}
+
+@media (max-width: 576px) {
+  .wrap { gap: 20px; }
+}

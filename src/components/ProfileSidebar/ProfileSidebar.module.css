@@ -1,0 +1,65 @@
+.wrap {
+  display: grid;
+  gap: 64px;
+}
+
+.card {
+  padding-bottom: 24px;
+  border-bottom: 1px solid black;
+}
+
+.h {
+  font-family: Lato;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: var(--style-title) !important;
+}
+
+.countries {
+  display: grid;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.country {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.flagStub {
+  width: 42px;
+  height: 32px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.countryName {
+  font-weight: 600;
+}
+
+.allBtn {
+  margin-top: 10px;
+  padding: 6px 8px;
+  border: none;
+  background: transparent;
+  color: var(--style-accent);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.buyBtn {
+  width: 100%;
+  margin: 8px 0 12px 0;
+}
+
+.calendarWrap {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}

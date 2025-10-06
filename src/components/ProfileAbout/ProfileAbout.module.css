@@ -1,0 +1,46 @@
+.wrap {
+  display: grid;
+  gap: 16px;
+}
+
+.h2 {
+  font-family: Lato;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: var(--style-title) !important;
+}
+
+.text {
+  display: grid;
+  gap: 8px;
+}
+
+.socials {
+  margin-top: 8px;
+}
+
+.socialBtn {
+  font-weight: 600;
+  color: var(--style-accent);
+  border-color: var(--style-accent);
+  border-radius: 0;
+}
+
+.gallery {
+  margin-top: 16px;
+  display: grid;
+  gap: 12px;
+}
+
+.imgStub {
+  width: 100%;
+  height: 220px;
+  border-radius:16px;
+  overflow:hidden;
+  aspect-ratio: 16 / 9;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+}

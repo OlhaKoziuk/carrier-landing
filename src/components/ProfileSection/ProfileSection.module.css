@@ -1,0 +1,29 @@
+.section{
+  width:100%;
+}
+
+.grid{
+  --gap: 32px;
+  --bp: 992px;
+  display:grid;
+  gap: var(--gap);
+  grid-template-columns: 1fr;
+  align-items: start;
+}
+
+@media (min-width: 992px){
+  .grid{
+    grid-template-columns: 14fr 8fr;
+  }
+}
+
+.main{ min-width: 0; }
+.sidebar{ min-width: 0; }
+
+
+.section > .grid{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 72px 16px;
+}
+
